@@ -15,7 +15,7 @@ class PrintTool: NSObject {
     /// 可以通过release模式和debug模式控制是否需要输出
    /// - Parameter content: 需要打印的内容
    static func debugPrint(_ content:Any) -> Void {
-        #if DebugType
+        #if DEBUG
         print(content)
         #else
     
