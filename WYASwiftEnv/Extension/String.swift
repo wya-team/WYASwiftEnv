@@ -32,7 +32,5 @@ extension String{
         let attrs = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: font)]
         let strSize = (self as NSString).boundingRect(with: CGSize(width: maxWidth, height: 0), options: [NSStringDrawingOptions.usesLineFragmentOrigin,.usesFontLeading,.truncatesLastVisibleLine], attributes: attrs, context: nil)
         return strSize.height + font
-        
-        
     }
 }

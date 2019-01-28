@@ -24,12 +24,14 @@ class BaseViewController: UIViewController {
             self.titleLabel.frame = CGRect(x: 0, y: 0, width: width, height: 44)
         }
     }
+
     var leftBarButtonItemTitleFont : CGFloat = 13.0{
         didSet{
             
             self.leftButton.titleLabel?.font = FONT(s: leftBarButtonItemTitleFont)
         }
     }
+
     var rightBarButtonItemTitleFont : CGFloat = 13.0{
         didSet{
             self.rightButton.titleLabel?.font = FONT(s: rightBarButtonItemTitleFont)
@@ -46,11 +48,13 @@ class BaseViewController: UIViewController {
             }
         }
     }
+
     var viewBackGroundColor : UIColor = UIColor.white{
         didSet{
             self.view.backgroundColor = viewBackGroundColor
         }
     }
+
     var navBackGroundColor : UIColor = UIColor.white{
         didSet{
             self.navigationController?.navigationBar.barTintColor = navBackGroundColor
